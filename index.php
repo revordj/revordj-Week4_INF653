@@ -46,7 +46,7 @@
             if (!empty($results)) {      ?>
                 <section>
                 <table id="results_table">
-                <tr>
+                <tr id = "hrow">
                      <h2>ToDo List</h2>
                 </tr>
                 <?php foreach ($results as $result) {
