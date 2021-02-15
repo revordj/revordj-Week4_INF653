@@ -46,7 +46,7 @@
             if (!empty($results)) {      ?>
                 <section>
                 <table id="results_table">
-                <tr id = "hrow">
+                <tr>
                      <h2>ToDo List</h2>
                 </tr>
                 <?php foreach ($results as $result) {
@@ -67,14 +67,20 @@
         <?php } else { ?>
             <p>Sorry, no results. </p>
         <?php } ?>
+   
             <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
-                <label for="newtask"> Task:</label>
+                <td>    
+                <label for="newtask"> Task :</label>
                 <input type="text" id="newtask" name="newtask" maxlength="20" required>
-                <label for="newdesc">Description::</label>
+                
+                <label for="newdesc">Description:</label>
                 <input type="text" id="newdesc" name="newdesc" maxlength="50" required>
+                </td>
+                <td>
                 <button> Add new Task </button>
-        </form>
-
+                 </td>    
+            </form>
+        
     </main>
 </body>
 </html>
